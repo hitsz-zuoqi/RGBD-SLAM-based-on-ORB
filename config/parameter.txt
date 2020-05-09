@@ -1,0 +1,45 @@
+# this is a parameter file to store params
+# use it to change the parameters without compiling the source code again
+# define params as " key = value" like camera.fx = 325.5
+
+
+
+# for camera intrin
+camera.cx=325.5
+camera.cy=253.5
+camera.fx=518.0
+camera.fy=519.0
+camera.scale=1000.0
+
+# for index 
+start_index=1
+end_index=780
+# for data
+rgb_dir=/opt/data/private/Code/RGBDSLAM/Lecture2/image/data/rgb_png/
+rgb_extension=.png
+depth_dir=/opt/data/private/Code/RGBDSLAM/Lecture2/image/data/depth_png/
+depth_extension=.png
+
+# for point cloud
+voxel_grid=0.005
+
+# enable real-time visualization
+visualize_pointcloud=yes
+
+# minimum matches
+min_good_match=10
+
+# min_inliers
+min_inliers=6
+
+#maximum motion error
+max_norm=0.5
+
+# part 7
+keyframe_threshold=0.2
+max_norm_lp=1.5
+
+# loop closure
+check_loop_closure=yes
+nearby_loops=5
+random_loops=5
